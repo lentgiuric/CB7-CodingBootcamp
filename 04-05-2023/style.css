@@ -1,0 +1,155 @@
+@import url(/normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.card_section{
+    width: 100%;
+    height: 100vh;
+    max-width: 1920px;
+    margin: 0 auto;
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+
+.card_container{
+    width: 90%;
+    height: 80%;
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 30px;
+}
+
+.card{
+    height: 380px;
+    width: 280px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(148, 197, 223);
+    transition: margin-bottom 0.5s ease;
+}
+
+@media screen and (min-width: 901px) {
+    
+    .jump:hover{
+        margin-bottom: 30px;
+        border: 1px solid rgb(64, 255, 0);
+    }
+  
+    
+}
+
+
+
+
+
+.bg_card1{
+    background-image: url("./images/mountains.jpg");
+    /* border: 2px solid red; */
+    height: 45%;
+    position: relative;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.bg_card1 p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    margin: 0;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.text{
+    /* border: 2px solid rgb(0, 42, 255); */
+    height: 55%;
+    padding: 15px 10px;
+}
+
+
+.text h3{
+    text-align: center;
+    margin: 0px 0px 15px 0px;
+}
+
+
+/*     Card2 style          */
+
+
+.bg_card2{
+    background-image: url("./images/sea.jpg");
+    height: 45%;
+    position: relative;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.bg_card2 p{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    margin: 0;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+
+/*     Card3 style          */
+
+
+.bg_card3{
+    background-image: url("./images/City.jpg");
+    height: 45%;
+    position: relative;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.bg_card3 p{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    margin: 0;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .card_container{
+    
+        flex-wrap: wrap;
+       
+    }
+
+    .ex_title {
+         height: 80px;
+         text-align: center;
+    }
+    
+}
+
+
