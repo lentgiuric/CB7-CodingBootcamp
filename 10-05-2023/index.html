@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" type="module"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>10-05-2023</title>
+</head>
+<body>
+    
+    <div class="title space">
+        <h1>Esercizio 2</h1>
+        <p>Utilizzando callbacks, ricreare la calcolatrice in forma base includento il DOM, pertanto non avremo più i risultati via console, ma direttamente renderizzati sulla pagina (qualunque interpretazione qui va bene, e qualunque grado di complessità verrà valutato positivamente, per es. potrete avere anche un solo operatore e due valori da sommare)</p>
+    </div>
+
+<!--  Start calculator -->
+    <div class="calculator">
+        <h2 class="calculator_tile space">Calcolatore</h2>
+        <div class="number space">
+            <label for="">Inserisci il primo numero:</label>
+            <input type="text" class="number1" name="Primo numero" id="Primo numero">
+        </div>
+        <div class="number space">
+            <label for="">Inserisci il secondo numero:</label>
+            <input type="text" class="number2" name="Secondo numero" id="Primo numero">
+        </div>
+        <div class="add_operator space">
+            <label for="">Inserisci uno operatore(+, -, *, /):</label>
+            <input type="text" class="operator" name="operator" id="operator">
+        </div>
+        <input type="submit" value="Calcola" class="calc">
+
+    </div> 
+            
+       
+ <!--  End calculator -->       
+
+    <div class="container_result">
+
+        <h2>Vedrai qui il tuo risultato</h2>
+        <p class="result"></p>
+
+    </div>
+        
+        
+
+
+</body>
+</html>
