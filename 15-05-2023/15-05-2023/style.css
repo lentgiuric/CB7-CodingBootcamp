@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #e7c496;
+}
+
+.anchor{
+    text-decoration: none;
+    color: black;
+}
+
+/*   Start Navbar */
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30; */
+    background-color: rgba(151, 222, 255, 0.66);
+}
+
+
+.navbar__links{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar_a{
+    padding: 20px;
+    border-radius: 9px;
+}
+
+.navbar_a:hover{
+    background-color: #e7c496;
+    color: white;
+}
+
+.navbar_user{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.navbar_user li p{
+    padding: 20px;
+    border-radius: 9px;
+    cursor: pointer;
+
+}
+
+.navbar_user li p:hover{
+    background-color: #e7c496;
+    color: white;
+}
+
+.nav_icon{
+    margin-right: 8px;
+    font-size: 20px;
+    
+}
+
+
+
+.navbar__search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.5px solid;
+    border-radius: 8px;
+    width: 220px;
+    height: 25px;
+    /* padding: 0 5px; */
+    
+}
+
+.navbar__search input{
+    border: none;
+    height: 90%;
+    margin-left: 5px;
+    background-color: transparent;
+    outline: none;
+}
+
+.search_icon{
+    font-size: 17px;
+    
+    
+}
+
+
+.search{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   width: 25px;
+   border-radius: 0px 8px 8px 0px;
+   background-color: 	#e7c496b4;
+}
+
+.search:hover{
+    background-color: #e7c496;
+    color: white;
+}
+
+
+
+
+
+/*   End Navbar */
+
+
+
+
+/*   Start Hero */
+
+.hero{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    /* margin-top: 80px; */
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: opacity(1.4);
+}
+
+.hero_content{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    padding: 25px;
+    transform: translateY(-50%);
+}
+
+.hero_content button{
+    border-radius: 9px;
+    border: none;
+    background-color:rgba(151, 222, 255, 0.66);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 25px;
+}
+
+.hero_content button:hover{
+    background-color:rgba(151, 222, 255, 0.867);
+}
+
+
+/*   End Hero */
+
+
+/* Start Card Content */
+
+
+
+.rootCard{
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.card{
+    width: 300px;
+    height: 400px;
+    /* border: 0.5px solid; */
+    border-radius: 9px 9px 9px 9px;
+    box-shadow: 7px 7px 15px 3px #000000;
+}
+
+.cardImg{
+    width: 100%;
+    height: 40%;
+    border-radius: 9px 9px 0 0;
+}
+
+.cardImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 9px 9px 0 0;
+}
+
+.cardContent{
+    width: 100%;
+    max-height: 60%;
+    /* background-color: #BAF1D4; */
+    border-radius: 0px 0px 9px 9px;
+    padding: 10px;
+}
+
+.cardContent h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.cardContent p{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+
+.cardContent button{
+    border-radius: 9px;
+    border: none;
+    background-color:rgba(151, 222, 255, 0.66);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 25px;
+}
+
+.cardContent button:hover{
+    background-color:rgba(151, 222, 255, 0.867);
+}
+
+.price{
+    font-weight: bold;
+}
