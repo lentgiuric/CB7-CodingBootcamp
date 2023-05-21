@@ -1,5 +1,5 @@
-import {login} from "./script.js";
-import {credenziali} from "./dati.js"
+import {login,} from "./script.js";
+// import {credenziali} from "./dati.js"
 
 
 export let cartArr = [];
@@ -9,10 +9,18 @@ export const qS = (el) => document.querySelector(el);
 export const qSA = (el) => document.querySelectorAll(el);
 
 
+
+// Login modal elements
 export let inputButton = cE("input");
 inputButton.type = "submit";
 inputButton.value = "Submit"
 inputButton.className = "inputLoginButton";
+
+export let form = cE("form");
+form.className = "loginForm";
+// End Login modal elements
+
+
 
 
 // Product constructor
@@ -145,8 +153,7 @@ return modalDiv
 export let loginCostructor = () => {
 
 
-        let form = cE("form");
-        form.className = "loginForm";
+        
 
         let loginTitle = cE("h2");
         loginTitle.textContent = "Inserisci i tuoi dati";
@@ -158,30 +165,6 @@ export let loginCostructor = () => {
         let inputPassword = cE("input")
         inputPassword.type = "password";
         inputPassword.placeholder = "Password";
-
-
-        
-    form.addEventListener("submit", (e) => {
-
-        e.preventDefault();
-        
-    
-
-        credenziali.forEach( (data)=> {
-
-            if (e.srcElement[0].value === data.nome && e.srcElement[1].value === data.password) {
-                console.log("Ti sei collegato")
-
-                 
-            }
-          })
-
-        })
-
-
-       
-  
-  
        
         
 

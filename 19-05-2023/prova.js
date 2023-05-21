@@ -6,3 +6,8 @@ let tf = "Scopri la moda a Tel Aviv e la spiritualità a Gerusalemme."
 
 
 console.log(ff.length, Sf.length, tf.length);
+
+
+
+
+

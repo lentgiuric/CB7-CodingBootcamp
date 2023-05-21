@@ -1,4 +1,5 @@
-import {cE, qS, qSA, productConstructor, modalConstructor, cartArr, loginCostructor, inputButton} from "./function.js";
+import {cE, qS, qSA, productConstructor, modalConstructor, cartArr, loginCostructor, inputButton, form} from "./function.js";
+import {credenziali} from "./dati.js"
 
 
 export let cartProducts = [];
@@ -7,10 +8,11 @@ let modalMain = qS(".modal_main");
 let productObj = [];
 let cart = qS(".cart");
 let cartContainer = qS(".cart_container");
+let searchInput = qS(".search_input");
 
 
 export let login = qS(".login");
-loginCostructor()
+login.append(loginCostructor())
 
 
 fetch("https://dummyjson.com/products")
@@ -35,19 +37,10 @@ fetch("https://dummyjson.com/products")
   })
   .then(() => {
 
-
-
-
-    
-    
     })
-
-
 
 // Cart modal constructor
     cart.addEventListener("click", () => {
-
-
       if (cartArr.length > 0) {
 
       cartContainer.textContent = "";
@@ -65,23 +58,33 @@ fetch("https://dummyjson.com/products")
         par.textContent = product.title;
         content.append(par,imgCart);
         cartContainer.append(content);
-
-    
-
-
       })
-  
-
     }
-
       console.log("ciao")
 
     });
 
 
 
+// Login Modal
+    form.addEventListener("submit", (e) => {
 
+      e.preventDefault();
+      
+  
 
+      credenziali.forEach( (data)=> {
+
+          if (e.srcElement[0].value === data.nome && e.srcElement[1].value === data.password) {
+              console.log("Ti sei collegato");
+
+              login.remove(loginCostructor())
+
+               
+          }
+        })
+
+      })
 
 
 
