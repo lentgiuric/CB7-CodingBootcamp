@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+body{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.todo{
+    margin-top: 50px;
+    padding: 30px 20px;
+    border: 2px solid;
+}
+
+
+
+
+.todo_list{
+    list-style-type: none;
+    width: 100%;
+    word-wrap:break-word;
+}
+
+.list_container{
+    padding: 10px 15px;
+}
+
+.list_container:first-child{
+    
+}
