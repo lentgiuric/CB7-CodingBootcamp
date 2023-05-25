@@ -17,7 +17,7 @@ export const createList = (paperino) =>{
     parag.textContent = paperino.todo;
 
     let delButton = cE("button");
-    delButton.textContent = "X";
+    delButton.textContent = "Delete";
 
     delButton.addEventListener("click", () => {
         // let delEl = document.querySelector(element.id);
@@ -43,7 +43,7 @@ export const createPersonaList = (pippo) =>{
     parag.textContent = pippo;
 
     let delButton = cE("button");
-    delButton.textContent = "X";
+    delButton.textContent = "Delete";
 
     delButton.addEventListener("click", () => {
         // let delEl = document.querySelector(element.id);
