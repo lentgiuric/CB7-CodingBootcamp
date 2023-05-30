@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>29-0</title>
+    <link rel="stylesheet" href="./CSS/logo.css">
+    <link rel="stylesheet" href="./CSS/navbar.css">
+    <link rel="stylesheet" href="./CSS/navbarbutton.css">
+    <script src="./script.js" type="module"></script>
+    <title>29-05-2023</title>
 </head>
 <body>
 
     <div class="page">
         <div class="main">
-        
             <!-- side header -->
 
             <header>
                 <div class="header_container">
-
             <!-- logo -->
-
                     <div class="logo">
                         <div class="logo_link">
                             <a href="#">
@@ -29,12 +30,11 @@
                     </div>
             <!-- end logo -->
 
-
             <!-- Sidebar navigation  -->
             <nav class="navbar">
 
                     <!-- Navigation  -->
-                        
+                <div class="navbar_wrapper">     
                 <div class="navbar_container">
                     
                     <a href="#">
@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                             <div class="navigation_description">
-                                <p>Home</p>
+                                <p class="description active">Home</p>
                             </div>
                         </div>
                     </a> 
@@ -53,17 +53,17 @@
                 </div>
 
 
-                <div class="navbar_container">
+                <div class="navbar_container ">
                     
                     <a href="#">
-                        <div class="navigation_item">
+                        <div class="navigation_item ">
                             <div class="icon_wrapper">
                                 <div class="navigation_icon">
-                                    <i class='bx bx-hash icon_style'></i>
+                                    <i class='bx bx-hash icon_style '></i>
                                 </div>
                             </div>
                             <div class="navigation_description">
-                                <p>Explore</p>
+                                <p class="description">Explore</p>
                             </div>
                         </div>
                     </a> 
@@ -81,7 +81,7 @@
                                 </div>
                             </div>
                             <div class="navigation_description">
-                                <p>Notifications</p>
+                                <p class="description">Notifications</p>
                             </div>
                         </div>
                     </a> 
@@ -99,7 +99,7 @@
                                 </div>
                             </div>
                             <div class="navigation_description">
-                                <p>Messages</p>
+                                <p class="description">Messages</p>
                             </div>
                         </div>
                     </a> 
@@ -117,7 +117,7 @@
                                 </div>
                             </div>
                             <div class="navigation_description">
-                                <p>Lists</p>
+                                <p class="description">Lists</p>
                             </div>
                         </div>
                     </a> 
@@ -134,7 +134,7 @@
                                 </div>
                             </div>
                             <div class="navigation_description">
-                                <p>Bookmarks</p>
+                                <p class="description">Bookmarks</p>
                             </div>
                         </div>
                     </a> 
@@ -151,7 +151,7 @@
                                 </div>
                             </div>
                             <div class="navigation_description">
-                                <p>Twitter Blue</p>
+                                <p class="description">Twitter Blue</p>
                             </div>
                         </div>
                     </a> 
@@ -168,7 +168,7 @@
                                 </div>
                             </div>
                             <div class="navigation_description">
-                                <p>Account</p>
+                                <p class="description">Account</p>
                             </div>
                         </div>
                     </a> 
@@ -185,16 +185,19 @@
                                 </div>
                             </div>
                             <div class="navigation_description">
-                                <p>More</p>
+                                <p class="description">More</p>
                             </div>
                         </div>
                     </a> 
                 
                 </div>
-
+            </div>   
 
                 <div class="navbar_button">
-                    <a href=""><p>Tweet</p></a>
+                    
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="icon_button "> <g> <path d="M23 3c-6.62-.1-10.38 2.421-13.05 6.03C7.29 12.61 6 17.331 6 22h2c0-1.007.07-2.012.19-3H12c4.1 0 7.48-3.082 7.94-7.054C22.79 10.147 23.17 6.359 23 3zm-7 8h-1.5v2H16c.63-.016 1.2-.08 1.72-.188C16.95 15.24 14.68 17 12 17H8.55c.57-2.512 1.57-4.851 3-6.78 2.16-2.912 5.29-4.911 9.45-5.187C20.95 8.079 19.9 11 16 11zM4 9V6H1V4h3V1h2v3h3v2H6v3H4z"></path>           </g>         </svg>
+                        <p>Tweet</p>
+                    
                 </div>
             <!-- End navigation Items -->
 
@@ -208,10 +211,8 @@
                 </div>
             </header>
 
-
-
             <section class="main_content">
-                <div class="post">post</div>
+                <div class="post">Home</div>
                 <div class="search">search</div>
             </section>
         </div>
