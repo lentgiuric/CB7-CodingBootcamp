@@ -20,28 +20,21 @@ keepData.then((data) => {
 
     
 
-        let err = postsData.map((element) => {
+        postsData.map((element) => {
           element.user = usersData.find((user) => user.id === element.userId);
           return element;
         }).forEach((obj) => {
             postContent.append(createPost(obj))
-
-            
-        
         });
 
     
 }).then(() => {
 
-        usersData.forEach((element) => {
-
-        console.log(element)
-
-        followElements.append(createFollow(element))
-    })
-
+    usersData.slice(5,13).forEach((element) => {
+    followElements.append(createFollow(element))
 })
 
+})
 
 
 
