@@ -1,0 +1,20 @@
+@import url(./variables.css);
+@import url(./header.css);
+@import url(./navbar.css);
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url(./contactlist.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+
+body{
+    background-color: var(--color-peach);
+    
+}
+
