@@ -1,0 +1,123 @@
+@import url(./varaibles.css);
+@import url(./header.css);
+@import url(./navbar.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+body{
+    background: rgb(84,255,181);
+    background: linear-gradient(90deg, rgba(84,255,181,1) 0%, rgba(112,231,255,1) 100%);
+
+}
+
+
+.main_contacts{
+    width: 100%;
+    max-width: 1920px;
+    height: calc(100vh - 110px);
+   
+    padding:15px;
+}
+
+.contacts_wrapper{
+    /* width: 400px; */
+    height: 100%;
+    padding: 10px 10px;
+    
+}
+ 
+.contacts_list{
+    height: 100%;
+    width: 400px;
+    position: relative;
+    box-shadow: 0px 0px 8px rgba(0, 19, 97, 0.668);
+    border-radius: 8px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+
+/* width */
+.contacts_list::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .contacts_list::-webkit-scrollbar-track {
+    background-color: var(---color-primary);
+    
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .contacts_list::-webkit-scrollbar-thumb {
+    background: rgb(84,255,181) ; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .contacts_list::-webkit-scrollbar-thumb:hover {
+    background: rgb(84,255,181); 
+  }
+
+/*----- End Contacts Scrollbar Style -----*/
+
+
+.contact_title{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact_title h2{
+    font-size: 22px;
+    color: var(---color-dark)
+}
+
+.empty_contacts{
+    width: 100%;
+    height: 100%;
+    color: var(---color-red);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty_contacts h3{
+    margin-top: 100px;
+    height: 80px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid;
+    /* border-color: var(---color-red);
+    background-color: var(---color-background); */
+}
+
+.contact_list{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid;
+}
+.contacts{
+    width: 100%;
+    height: auto;
+}
+
+.icon{
+    font-size: 50px;
+    
+}
